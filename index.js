@@ -17,7 +17,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN);
 (async function() {
   await doc.useServiceAccountAuth({
     client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-    private_key: process.env.GOOGLE_PRIVATE_KEY,
+    private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/gm, '\n'),
   });
 }());
 
