@@ -13,5 +13,8 @@
     "dotenv": "^8.2.0",
     "google-spreadsheet": "^3.0.14",
     "telegraf": "^3.38.0"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
